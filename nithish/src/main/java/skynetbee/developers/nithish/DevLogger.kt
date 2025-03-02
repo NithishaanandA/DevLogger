@@ -1,4 +1,4 @@
-package skynetbee.developer.nithish
+package skynetbee.developers.nithish
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -7,7 +7,7 @@ import java.time.LocalDate
 import java.util.Date
 import java.util.Locale
 
-//  
+//
 // DevLogger.kt
 // skynetbee.developer.nithish
 //
@@ -27,3 +27,6 @@ val _Time: String
         val sdf = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
         return sdf.format(Date())
     }
+val _Class : String get() = Thread.currentThread().stackTrace[3].className.substringAfterLast(".")
+
+val _Method : String get() = Thread.currentThread().stackTrace[3].methodName.toString()

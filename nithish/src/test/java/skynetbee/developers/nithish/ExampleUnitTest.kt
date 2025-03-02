@@ -1,4 +1,4 @@
-package skynetbee.developer.nithish
+package skynetbee.developers.nithish
 
 import org.junit.Test
 
